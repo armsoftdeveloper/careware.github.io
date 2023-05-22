@@ -1,0 +1,12 @@
+article{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Media Rules */
+
+@media (min-width:992px){
+    article{
+        padding: 55px;
+    }
+}

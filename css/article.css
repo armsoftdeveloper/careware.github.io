@@ -1,0 +1,16 @@
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* Media Rules */
+@media (min-width: 992px) {
+  article {
+    padding: 55px;
+  }
+}

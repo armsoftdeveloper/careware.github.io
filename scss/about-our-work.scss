@@ -1,0 +1,99 @@
+.section-about-work{
+    margin-top: 20px;
+    .inner-about-work{
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        .col-item{
+            display: inherit;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .col{
+                width: 50%;
+                img{
+                    max-width: 100%;
+                    height: auto;
+                    border-top-left-radius: 400px;
+                    border-bottom-left-radius: 400px;
+                    border-top-right-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                }
+            }
+            .text-col{
+                width: 50%;
+                height: auto;
+                padding-left: 25px;
+                padding-right: 25px;
+                p{
+                    width: 90%;
+                }
+            }
+        }
+        .col-item:nth-child(even){
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            .col{
+                width: 50%;
+                img{
+                    max-width: 100%;
+                    height: auto;
+                    border-top-left-radius: 0px;
+                    border-bottom-left-radius: 0px;
+                    border-top-right-radius: 400px;
+                    border-bottom-right-radius: 400px;
+                }
+            }
+            .text-col{
+                width: 50%;
+                height: auto;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
+    }
+}
+
+
+/* Media Rules */
+@media (max-width:992px){
+    .section-about-work{
+        .inner-about-work{
+            padding: 0px;
+            width: 100%;
+            .col-item{
+                flex-direction: column;
+                .col{
+                    width: 100%;
+                }
+                .text-col{
+                    width: 100%;
+                    padding: 25px;
+                    p{
+                        width: 100%;
+                    }
+                }
+            }
+            .col-item:nth-child(even){
+                flex-direction: column;
+                .col{
+                    width: 100%;
+                }
+                .text-col{
+                    width: 100%;
+                    padding: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    p{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
